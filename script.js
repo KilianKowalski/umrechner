@@ -9,9 +9,9 @@ function convert() {
     let result = 0;
     if (currency === 'eur') {
         result = amount * exchangeRate.gbp;
-        document.getElementById('result').innerText = `${amount}€ sind ${result.toFixed(2)}£`;
+        document.getElementById('result').innerText = `${result.toFixed(2)}£`;
     } else {
         result = amount * exchangeRate.eur;
-        document.getElementById('result').innerText = `${amount}£ sind ${result.toFixed(2)}€`;
+        document.getElementById('result').innerText = `${result.toFixed(2)}€`;
     }
 }
